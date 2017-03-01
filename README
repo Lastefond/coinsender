@@ -2,4 +2,4 @@
 
 
 load 'sidekiq_start.rb'
-LookupWorker.perform_async(box_id: 0, name: "Kala", coins: [200, 10, 50, 200, 100], timestamp: Time.now.to_i)
+SendCoinsWorker.perform_async(box_id: 0, name: "Kala", coins: [200, 10, 50, 200, 100], timestamp: Time.now.to_i)

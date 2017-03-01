@@ -2,7 +2,7 @@ require 'sidekiq'
 require 'net/http'
 require 'json'
 
-class LookupWorker
+class SendCoinsWorker
   include Sidekiq::Worker
 
   def perform(*args)

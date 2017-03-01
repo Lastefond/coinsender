@@ -1,1 +1,4 @@
 .ruby-env
+coinsender-lock
+coinsender.pid
+log/*.log
