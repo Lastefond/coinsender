@@ -15,5 +15,6 @@ class SendCoinsWorker
     puts "response #{res.body}"
   rescue => e
       puts "failed #{e}"
+      raise e
   end
 end
